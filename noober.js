@@ -1,6 +1,18 @@
 function pageLoad() {
   // 👇 YOUR CODE BEGINS HERE. DON'T CHANGE ANY OTHER CODE. 👇
 
+let levelOfService = 'Tacos'
+
+
+
+
+
+
+
+
+
+
+
   // 🔥🔥🔥 YOUR CODE GOES HERE 🔥🔥🔥
   // the 'ride' variable contains data about a random ride (i.e. when the page)
   // is refreshed or reloaded, the 'ride' variable will contain something different
