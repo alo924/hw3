@@ -1,7 +1,7 @@
 function pageLoad() {
   // 👇 YOUR CODE BEGINS HERE. DON'T CHANGE ANY OTHER CODE. 👇
 
-  console.log(ride)
+console.log(ride)
 
  levelOfService=['Noober X', 'Noober Purple', 'Noober XL', 'Noober Pool']
   if (ride.length>1 || ride[0].numberOfPassengers ==1){
@@ -12,16 +12,17 @@ function pageLoad() {
     levelOfService= 'Noober XL'
   } else {levelOfService = 'Noober X'}
 
+  console.log(levelOfService)
+
   let passenger1=ride[0]
   let passenger2=ride[1]
   let passenger3=ride[2]
 
-console.log(levelOfService)
 
-if (ride.length==1){
+if (ride.length == 1){
   passenger1Name = ride[0].passengerDetails.first + ' ' +ride[0].passengerDetails.last
   passenger1Phone = ride[0].passengerDetails.phoneNumber
-  passenger1NumberofPassengers = ride[0].numberOfPassengers
+  passenger1NumberofPassengers = ride[0].passengerDetails.numberOfPassengers
   passenger1PickupAddressLine1 = ride[0].pickupLocation.address
   passenger1PickupAddressLine2 = ride[0].pickupLocation.city  + ',' + ride[0].pickupLocation.state +' ' + ride[0].pickupLocation.zip
   passenger1DropoffAddressLine1 = ride[0].dropoffLocation.address
@@ -35,7 +36,7 @@ if (ride.length==1){
   console.log(passenger1DropoffAddressLine1)
   console.log(passenger1DropoffAddressLine2)
 
-} else if (ride.length==2) {
+} else if (ride.length == 2) {
   
   passenger1Name = ride[0].passengerDetails.first + ' ' +ride[0].passengerDetails.last
   passenger1Phone = ride[0].passengerDetails.phoneNumber
@@ -55,7 +56,7 @@ if (ride.length==1){
   
   passenger2Name = ride[1].passengerDetails.first + ' ' +ride[1].passengerDetails.last
   passenger2Phone = ride[1].passengerDetails.phoneNumber
-  passenger2NumberofPassengers = ride[1].numberOfPassengers
+  passenger2NumberofPassengers = ride[1].passengerDetails.numberOfPassengers
   passenger2PickupAddressLine1 = ride[1].pickupLocation.address
   passenger2PickupAddressLine2 = ride[1].pickupLocation.city  + ',' + ride[1].pickupLocation.state +' ' + ride[1].pickupLocation.zip
   passenger2DropoffAddressLine1 = ride[1].dropoffLocation.address
@@ -69,7 +70,7 @@ if (ride.length==1){
   console.log(passenger2DropoffAddressLine1)
   console.log(passenger2DropoffAddressLine2)
 
-} else if (ride.length==3)
+} else if (ride.length == 3)
 
 passenger1Name = ride[0].passengerDetails.first + ' ' +ride[0].passengerDetails.last
 passenger1Phone = ride[0].passengerDetails.phoneNumber
