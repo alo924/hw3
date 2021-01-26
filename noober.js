@@ -21,7 +21,7 @@ let passenger3=ride[2]
 
   console.log(levelOfService)
 
-if (ride.length = 1){
+if (ride.length == 1){
   passenger1Name = ride[0].passengerDetails.first + ' ' +ride[0].passengerDetails.last
   passenger1Phone = ride[0].passengerDetails.phoneNumber
   passenger1NumberOfPassengers = ride[0].numberOfPassengers
@@ -38,7 +38,7 @@ if (ride.length = 1){
   console.log(passenger1DropoffAddressLine1)
   console.log(passenger1DropoffAddressLine2)
 
-} else if (ride.length = 2) {
+} else if (ride.length == 2) {
   
   passenger1Name = ride[0].passengerDetails.first + ' ' +ride[0].passengerDetails.last
   passenger1Phone = ride[0].passengerDetails.phoneNumber
