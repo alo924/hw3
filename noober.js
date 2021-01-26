@@ -1,18 +1,18 @@
 function pageLoad() {
   // 👇 YOUR CODE BEGINS HERE. DON'T CHANGE ANY OTHER CODE. 👇
 
- let passenger1=ride[0]
- let passenger2=ride[1]
- let passenger3=ride[2]
-
- levelOfService = ('Noober X', 'Noober Purple', "Noober XL")
-  if (ride.length>1){
+ levelOfService=['Noober X', 'Noober Purple', 'Noober XL', 'Noober Pool']
+  if (ride.length>1 || ride[0].numberOfPassengers ==1){
     levelOfService='Noober Pool'
   } else if (ride.purplerequested=true) {
     levelOfService = 'Noober Purple'
   } else if (ride.numberOfPassengers >3) {
     levelOfService= 'Noober XL'
   } else {levelOfService = 'Noober X'}
+
+  let passenger1=ride[0]
+  let passenger2=ride[1]
+  let passenger3=ride[2]
 
 console.log(levelOfService)
 
