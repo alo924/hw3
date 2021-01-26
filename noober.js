@@ -3,13 +3,13 @@ function pageLoad() {
 
 console.log(ride)
 
- levelOfService=['Noober X', 'Noober Purple', 'Noober XL', 'Noober Pool']
-  if (ride.length>1 || ride[0].numberOfPassengers ==1){
-    levelOfService='Noober Pool'
-  } else if (ride.purplerequested=true) {
-    levelOfService = 'Noober Purple'
+ levelOfService = ['Noober X', 'Noober Purple', 'Noober XL', 'Noober Pool']
+  if (ride[0].numberOfPassengers = 1 ||ride.length>1){
+    levelOfService == 'Noober Pool'
+  } else if (ride.purplerequested = true) {
+    levelOfService == 'Noober Purple'
   } else if (ride.numberOfPassengers >3) {
-    levelOfService= 'Noober XL'
+    levelOfService == 'Noober XL'
   } else {levelOfService = 'Noober X'}
 
   console.log(levelOfService)
@@ -22,8 +22,8 @@ console.log(ride)
 if (ride.length == 1){
   passenger1Name = ride[0].passengerDetails.first + ' ' +ride[0].passengerDetails.last
   passenger1Phone = ride[0].passengerDetails.phoneNumber
-  passenger1NumberofPassengers = ride[0].passengerDetails.numberOfPassengers
-  passenger1PickupAddressLine1 = ride[0].pickupLocation.address
+  passenger1NumberofPassengers = ride[0].dropoffLocation.numberOfPassengers
+  passenger1PickupAddressLine1 = ride[0].passengerDetails.pickupLocation.address
   passenger1PickupAddressLine2 = ride[0].pickupLocation.city  + ',' + ride[0].pickupLocation.state +' ' + ride[0].pickupLocation.zip
   passenger1DropoffAddressLine1 = ride[0].dropoffLocation.address
   passenger1DropoffAddressLine2 = ride[0].dropoffLocation.city +',' + ride[0].dropoffLocation.state +' '+ride[0].dropoffLocation.zip
@@ -36,7 +36,7 @@ if (ride.length == 1){
   console.log(passenger1DropoffAddressLine1)
   console.log(passenger1DropoffAddressLine2)
 
-} else if (ride.length == 2) {
+} else if (ride.length = 2) {
   
   passenger1Name = ride[0].passengerDetails.first + ' ' +ride[0].passengerDetails.last
   passenger1Phone = ride[0].passengerDetails.phoneNumber
@@ -70,7 +70,7 @@ if (ride.length == 1){
   console.log(passenger2DropoffAddressLine1)
   console.log(passenger2DropoffAddressLine2)
 
-} else if (ride.length == 3)
+} else if (ride.length = 3)
 
 passenger1Name = ride[0].passengerDetails.first + ' ' +ride[0].passengerDetails.last
 passenger1Phone = ride[0].passengerDetails.phoneNumber
